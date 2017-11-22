@@ -7,14 +7,14 @@ See the URL -- https://www.microsoft.com/net/learn/get-started/windows
 The success of the installation can be checked by bringing up a Windows Command 
 prompt and typing "dotnet --version".  
 
-2. Unzip the file "PublishOutput.zip" into a local directory.
+2. Unzip the file "ds_fileupload.zip" into a local directory.
 
-3. Edit the file "appsettings.json" in the PublishOutput directory.  Replace the 
+3. Edit the file "appsettings.json" in the ds_fileupload directory.  Replace the 
 four values in the "AWSCreds" section with the values associated with the targeted AWS S3
 service.
 
-4. Bring up a command prompt window and "cd C:\{path}\PublishOutput", where "path" is the 
-folder path containing the PublishOutput directory.
+4. Bring up a command prompt window and "cd C:\{path}\ds_fileupload", where "path" is the 
+folder path containing the ds_fileupload directory.
 
 5. Start the app by typing "dotnet ds_fileupload.dll".  The app can be quickly tested using
 curl or Google's Postman.  The base URL will most likely be "http://localhost:5000".  For 
@@ -25,13 +25,13 @@ HOW TO RUN THE UNIT TESTS
 
 1. The tests also require a .Net Core installation on the local system.  
 
-2. Unzip the file "PublishOutput-tests.zip" into a local directory.
+2. Unzip the file "ds_unittests.zip" into a local directory.
 
-3. Edit the file "baseurl.txt" in the PublishOutput directory and if necessary, replace the
+3. Edit the file "baseurl.txt" in the ds_unitests directory and if necessary, replace the
 base URL.
 
-4. Bring up a command prompt window and "cd C:\{path}\PublishOutput", where "path" is the 
-folder path containing the PublishOutput directory created for the tests.
+4. Bring up a command prompt window and "cd C:\{path}\ds_unittests", where "path" is the 
+folder path created for the tests.
 
 5. Start the tests by typing "dotnet vstest ds_unittests.dll".  The tests results will be 
 reported in the command prompt window and should be successful.  There should also be a new

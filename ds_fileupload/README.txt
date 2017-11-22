@@ -37,6 +37,10 @@ folder path created for the tests.
 reported in the command prompt window and should be successful.  There should also be a new
 file in the AWS bucket which can be checked in the AWS Console.  
 
+NOTE:  Normally, a test set should return the state of its target to an initial state, in 
+this case by deleting files ithad uploaded.  In this case however, leaving the files is 
+useful check on the operation of the tests
+
 SOURCE CODE
 
 The source is contained primarily in the file Controllers/AssetController.cs.  
